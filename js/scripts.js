@@ -19,17 +19,9 @@ $(function() {
       $('#shippingcity').val($('#city').val());
       $('#shippingstates').val($('#states').val());
       $('#shippingzip').val($('#zip').val());
-      $('#shippingaddress1').attr('disabled', 'disabled');
-      $('#shippingaddress2').attr('disabled', 'disabled');
-      $('#shippingcity').attr('disabled', 'disabled');
-      $('#shippingstates').attr('disabled', 'disabled');
-      $('#shippingzip').attr('disabled', 'disabled');
+      $('[id^=shipping]').attr('disabled', 'disabled');
     } else {
-   $('#shippingaddress1').removeAttr('disabled');
-   $('#shippingaddress2').removeAttr('disabled');
-   $('#shippingcity').removeAttr('disabled');
-   $('#shippingstates').removeAttr('disabled');
-   $('#shippingzip').removeAttr('disabled');
+   $('[id^=shipping]').removeAttr('disabled');
     }
 
   });
