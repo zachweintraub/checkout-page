@@ -5,3 +5,7 @@
 #paypal-form {
   display: none;
 }
+
+#receipt {
+  display: none;
+}

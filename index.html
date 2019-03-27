@@ -9,7 +9,7 @@
   </head>
   <body>
     <div class="container">
-      <div>
+      <div id='checkout-form'>
         <form>
           <h3>Personal Info.</h3>
           <div class="form-group">
@@ -204,8 +204,17 @@
             <label for="shippingzip">Zip Code:</label>
             <input id="shippingzip" class="form-control" type="text">
           </div>
-          <button type="submit" class="btn">Submit</button>
+          <button id='submit' type="submit" class="btn">Submit</button>
         </form>
+      </div>
+      <div id='receipt'>
+        <p>Name: <span id='receipt-name'></span></p>
+        <p>Address: <span id='receipt-address'></span></p>
+        <p>Address Line 2: <span id='receipt-address2'></span></p>
+        <p>City: <span id='receipt-city'></span></p>
+        <p>State: <span id='receipt-states'></span></p>
+        <p>Zip: <span id='receipt-zip'></span></p>
+
       </div>
     </div>
   </body>
